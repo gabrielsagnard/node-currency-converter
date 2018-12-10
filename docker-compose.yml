@@ -12,7 +12,7 @@ services:
     ports:
       - 5000:5000
   redis:
-    image: redis
+    image: redis:5-alpine
     container_name: cache
     expose:
     - 6379
