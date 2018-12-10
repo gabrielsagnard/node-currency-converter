@@ -1,0 +1,18 @@
+version: '3'
+services:
+  web:
+    build: .
+    volumes:
+      - .:/usr/src/site
+      - /usr/src/site/node_modules
+    links:
+      - redis
+    environment:
+      - REDIS_URL=redis://cache
+    ports:
+      - 5000:5000
+  redis:
+    image: redis:5-alpine
+    container_name: cache
+    expose:
+    - 6379
