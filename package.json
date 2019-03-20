@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "Olayinka Omole <olayinka.omole@gmail.com>",
+  "author": "Gabriel SAGNARD <gabrielsagnard26@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.17.1",
